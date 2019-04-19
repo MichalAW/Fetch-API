@@ -12,12 +12,19 @@ function getQuote() {
 
 function createTweet(input) {
     var data = input[0];
+    var arrayData = new Array([data]);
     var dataElement = document.createElement('div');
     dataElement.innerHTML = data.content;
     var quoteText = dataElement.innerText.trim();
     var quoteAuthor = data.title;
     var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
 
+    if ( data === arrayData ) {
+        return data; 
+    } else {
+        return; //stop the execution of function
+    }
+        
     if (tweetText.length > 140) {
     	getQuote();
 	} else {
