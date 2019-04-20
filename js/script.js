@@ -7,10 +7,16 @@ function getQuote() {
 		.then(function(resp) {
 			return resp.json();
 		})
-	.then(createTweet);
+	// .then(createTweet);
+    .then(function(respjson){
+        createTweet(respjson);
+    })
 }
 
 function createTweet(input) {
+    if (!Array.isArray(input)) {
+        return alert('I\'m sorry, please try again');
+    }
     var data = input[0];
     var arrayData = new Array([data]);
     var dataElement = document.createElement('div');
@@ -19,12 +25,6 @@ function createTweet(input) {
     var quoteAuthor = data.title;
     var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
 
-    if ( data === arrayData ) {
-        return data; 
-    } else {
-        return; //stop the execution of function
-    }
-        
     if (tweetText.length > 140) {
     	getQuote();
 	} else {
