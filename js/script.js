@@ -7,10 +7,7 @@ function getQuote() {
 		.then(function(resp) {
 			return resp.json();
 		})
-	// .then(createTweet);
-    .then(function(respjson){
-        createTweet(respjson);
-    })
+	.then(createTweet);
 }
 
 function createTweet(input) {
