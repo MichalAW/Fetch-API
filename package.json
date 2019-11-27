@@ -1,5 +1,5 @@
 {
-  "name": "16.5.Fetch-API",
+  "name": "Fetch-API",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -21,15 +21,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MichalAW/16.5.Fetch-API.git"
+    "url": "https://github.com/MichalAW/Fetch-API.git"
   },
   "keywords": [],
   "author": "MichalAW michal.wanta@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MichalAW/16.5.Fetch-API/issues"
+    "url": "https://github.com/MichalAW/Fetch-API/issues"
   },
-  "homepage": "https://github.com/MichalAW/16.5.Fetch-API#readme",
+  "homepage": "https://github.com/MichalAW/Fetch-API#readme",
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.3",
